@@ -10,12 +10,14 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 <div class="form">
-    <form method="post" action="https://survey-form.freecodecamp.rocks">
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
         <fieldset>
-            <label for="name">Name
+            <label id="number-label">NIK<input id="number" name="NIK" type="number" min="0" max="9999999" placeholder="Enter your NIK" required> 
+            </label>
+            <label id="name-label" for="name">Name
                 <input id="name" name="name" type="text" placeholder="Enter your name" required>
             </label>
-            <label for="name">Email
+            <label id="email-label" for="name">Email
                 <input id="email" name="email" type="email" placeholder="Enter your Email"required>
             </label>
             <label for="name">Age
@@ -23,22 +25,22 @@
             </label>
             <label for="role">Which option best describes your current role?
                 <div>
-                <select name="role" id="role">
-                    <option value="">Select current role</option>
-                    <option value="1">Student</option>
-                    <option value="2">Full Time Job</option>
-                    <option value="3">Full Time Learner</option>
-                    <option value="4">Prefer Not To Say</option>
-                    <option value="5">Other</option>
+                <select id="dropdown" name="role">
+                    <option name="none" value="0">Select current role</option>
+                    <option name="student" value="1">Student</option>
+                    <option name="full-time-job" value="2">Full Time Job</option>
+                    <option name="full-time-learner" value="3">Full Time Learner</option>
+                    <option name="not-to-say" value="4">Prefer Not To Say</option>
+                    <option name="other" value="5">Other</option>
                 </select>
             </div>  
             </label>
         </fieldset>
         <fieldset>
             <legend>Would you recommend freeCodeCamp to a friend?</legend>
-            <label for="referrer"><input id="referrer" type="radio" name="referrer" checked> Definitely</label>
-            <label for="referrer"><input id="referrer" type="radio" name="referrer"> Maybe</label>
-            <label for="referrer"><input id="referrer" type="radio" name="referrer"> Not Sure</label>
+            <label for="referrer"><input id="referrer" value="definitely" type="radio" name="referrer" checked> Definitely</label>
+            <label for="referrer"><input id="referrer" value="maybe" type="radio" name="referrer"> Maybe</label>
+            <label for="referrer"><input id="referrer" value="not-sure" type="radio" name="referrer"> Not Sure</label>
         </fieldset>
         <fieldset>
             <label for="role">What is your favorite feature of freeCodeCamp?
@@ -68,7 +70,7 @@
             <textarea id="comments" name="comments" rows="4" cols="60" placeholder="Enter your comment here..."></textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
     </form>
 </div>
 </body>
