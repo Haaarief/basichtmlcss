@@ -1,0 +1,85 @@
+body {
+  font-family: 'Poppins';
+  font-
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: url("https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  padding: 10px;
+  color:white;
+}
+p {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+p,
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+form {
+  width: 70vw;
+  max-width: 550px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+label {
+  display: block;
+  padding: 5px;
+}
+
+#referrer,
+#improve {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.form {
+  width: 80%;
+  background-color: rgba(47, 10, 100, 0.5);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 600px;
+}
+
+input[type='submit'] {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 1em auto;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #50c878;
+  min-width: 300px;
+  color: white;
+}
+input[type='submit']:hover {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 1em auto;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #50c860;
+    min-width: 300px;
+    color: white;
+  }
