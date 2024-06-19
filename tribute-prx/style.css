@@ -2,4 +2,124 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    margin: 0;
+    color:#fff
 }
+* {
+    box-sizing: border-box;
+  }
+nav{
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(2px);
+    top:0;
+    left:0;
+    padding: 5px 6px;
+    width:100%;
+    z-index:10;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 20px
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#main{
+    text-align: center;
+    max-width:800px;
+    margin: 0 auto;
+}
+#main h1 {
+    font-family: Lemonada, sans-serif;
+    font-size: 5vw;
+    margin: 0;
+    padding-top: 100px ;
+    line-height: 1em;
+}
+#img-div {
+    background-color: white;
+    padding: 15px;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+}
+
+#img-caption{
+    margin-top:10px;
+    font-size:0.7em;
+    color: black;
+}
+#tribute-info {
+    width: 600px;
+    margin: 50px auto;
+  }
+  
+  #tribute-info h2 {
+    text-align: center;
+  }
+  
+  #tribute-info ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  #tribute-info li {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+
+  .teams {
+    position: relative;
+    display: flex;
+  }
+  
+  .teams .teams-img {
+    width: 200px;
+    height:auto;
+    padding: auto;
+  }
+  
+  .teams .team-overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .teams .team-overlay:hover {
+    opacity: 0.8;
+  }
+  
+  .name {
+    font-size: 0.8em;
+  }
+  
+  .ingame-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
