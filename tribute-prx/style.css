@@ -79,7 +79,7 @@ nav ul li a{
     font-weight: 800;
   }
   #tribute-link:hover{
-    color: rgb(163, 7, 181);
+    color: rgb(129, 0, 143);
   }
   #tribute-info h2 {
     text-align: center;
@@ -164,6 +164,7 @@ nav ul li a{
 
 #achievements {
   padding: 20px;
+  padding-top:50px;
   text-align: center;
   margin-top: 50px;
   font-size: 1.5em;
